@@ -1,0 +1,23 @@
+{
+  "name": "com.unity.timeline",
+  "displayName": "Timeline",
+  "version": "1.2.4",
+  "unity": "2019.3",
+  "keywords": [
+    "unity",
+    "animation",
+    "editor",
+    "timeline",
+    "tools"
+  ],
+  "description": "Use Unity Timeline to create cinematic content, game-play sequences, audio sequences, and complex particle effects.",
+  "dependencies": {},
+  "relatedPackages": {
+    "com.unity.timeline.tests": "1.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.cds.internal.unity3d.com:unity/com.unity.timeline.git",
+    "revision": "f3f946b638d3f04553d5dfd8b76b20a062be30e3"
+  }
+}

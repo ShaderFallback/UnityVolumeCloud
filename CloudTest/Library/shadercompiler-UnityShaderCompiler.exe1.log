@@ -1,0 +1,25 @@
+Base path: 'D:/Program Files/Unity 2019.3.0b8/Editor/Data', plugins path 'D:/Program Files/Unity 2019.3.0b8/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=256 outsize=546 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=186 outsize=419 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1602 outsize=2002 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=8653 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1176 outsize=772 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1454 outsize=603 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3070 outsize=48128 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=9840 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2044 outsize=1000 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2059 outsize=1515 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=11538 outsize=1806 kw=FINALPASS COLOR_GRADING_HDR_3D pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1

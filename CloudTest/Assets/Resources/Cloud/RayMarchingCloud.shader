@@ -100,11 +100,11 @@
 
                 float2 uv = (size.xz * 0.5f + (rayPos.xz - boundsCentre.xz) ) /max(size.x,size.z);
      
-                float4 maskNoise = tex2D(_maskNoise, uv + float2(speedShape * 0.5,0));
-                float4 weatherMap = tex2D(_weatherMap, uv + float2(speedShape * 0.4,0));
+                float4 maskNoise = tex2Dlod(_maskNoise, float4(uv + float2(speedShape * 0.5, 0), 0, 0));
+                float4 weatherMap = tex2Dlod(_weatherMap, float4(uv + float2(speedShape * 0.4, 0), 0, 0));
 
-                float4 shapeNoise = tex3D(_noiseTex, uvwShape + (maskNoise.r * _xy_Speed_zw_Warp.z * 0.1) ) ;
-                float4 detailNoise = tex3D(_noiseDetail3D, uvwDetail + (shapeNoise.r * _xy_Speed_zw_Warp.w * 0.1));
+                float4 shapeNoise = tex3Dlod(_noiseTex, float4(uvwShape + (maskNoise.r * _xy_Speed_zw_Warp.z * 0.1), 0));
+                float4 detailNoise = tex3Dlod(_noiseDetail3D, float4(uvwDetail + (shapeNoise.r * _xy_Speed_zw_Warp.w * 0.1), 0));
 
                 //边缘衰减
                 const float containerEdgeFadeDst = 10;
@@ -218,9 +218,9 @@
                 float dstTravelled = blueNoise.r * _rayOffsetStrength;
                 float sumDensity = 1;
                 float3 lightEnergy = 0;
-                const float sizeLoop = 32;
+                const float sizeLoop = 512;
                 float stepSize = exp(_step)*_rayStep;
-                [unroll(32)]
+                
                 for (int j = 0; j < sizeLoop; j++)
                 {
                     if(dstTravelled < dstLimit)
